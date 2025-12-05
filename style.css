@@ -1,6 +1,28 @@
 body {
-    background-color: blue;
-    color: aliceblue;
+    background-color: blue;  /* cor de fundo */
+    color: aliceblue;   /*cor da letra*/
+    margin: 0px;   /* espaço antes da borda  */
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px white; 
+    padding: 20px;  /* espaçamento depois da borda e antes do conteúdo */
+    font-size: 32px;
+    color: white;
+}
+
+.chamada {
+    background-color: #790cec;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.chamada-texto {
+    margin-right: 5%;
 }
 
 h1 {
@@ -8,8 +30,27 @@ h1 {
 }
 
 p {
-    color: black;
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
 }
 
+.categoria-videos {
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+}
 
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 1px solid green;
+}
